@@ -11,12 +11,10 @@ def call(String stageName){
      }
   else if ("${stageName}" == "SonarQube Report")
      { 
-       sh "echo 'running QA on akugbe' "
-       
+       sh "echo 'running QA on akugbe'"
      }
   else if ("${stageName}" == "Upload Into Nexus")
      { 
        sh "echo 'uploading artifacts of akugbe' "
-       
      }
 }
