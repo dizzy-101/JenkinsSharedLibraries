@@ -14,12 +14,12 @@ def call(String stageName){
      { 
        sh "echo 'running QA on akugbe'"
        sh "echo 'lets go on akugbe'"
-       //sh "mvn clean sonar:sonar"
+       sh "mvn clean sonar:sonar"
      }
   else if ("${stageName}" == "Upload Into Nexus")
      { 
        sh "echo 'uploading artifacts of akugbe' "
        sh "echo 'running QA on akugbe'"
-       //sh "mvn clean deploy"
+       sh "mvn clean deploy"
      }
 }
