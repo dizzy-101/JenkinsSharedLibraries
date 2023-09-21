@@ -20,6 +20,9 @@ def call(String stageName){
      { 
        sh "echo 'uploading artifacts of akugbe' "
        sh "echo 'running QA on akugbe'"
-       sh "npm publish"
+       //sh "npm publish"
+       sh 'chmod u+x ./scripts/nexus.sh'
+       sh './scripts/nexus.sh'
+       sh 'npm publish'
      }
 }
